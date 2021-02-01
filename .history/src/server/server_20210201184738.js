@@ -36,15 +36,13 @@ const item = require('./routes/api/ItemRoute')
 app.use('/api/item', item);
 /*************************************************************************/
 
-
 /*************************** GESTION DU PORT **************************/
 // Déclaration du port pour le serveur     
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // App à l'écoute de notre port 
 app.listen(port, () => console.log(`App listening on port ${port}`));
 /***********************************************************************/
-
 
 /*************************** SETUP ENV PRODUCTION **************************/
 // Check si on est en mode production avec des req https 
