@@ -17,12 +17,7 @@ const app = express();
 // app utilisera le bodyparser avec comme format de document reçus/envoyés, du .json
 app.use(bodyParser.json());
 /****************************************************************************************/
-
-
-/************ INITIALISATION DES CORS POUR L'ACCES DU FRONT **************/
 app.use(cors())
-/*************************************************************************/
-
 
 /*************************** CONNECTION A LA BDD **************************/
 // Récupération de l'uri de notre bdd 

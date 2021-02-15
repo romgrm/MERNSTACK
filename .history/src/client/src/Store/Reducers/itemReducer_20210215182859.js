@@ -5,7 +5,7 @@ export const ITEM_ERROR = 'ITEM_ERROR'
 // On initialise le state de base qui accueillera les données fecth de l'API 
 const initialState = {
     items:[],
-    loading:true
+    loading:false
 }
 
 // Function qui va prendre un state(avec en valeur l'inital state) et des actions 

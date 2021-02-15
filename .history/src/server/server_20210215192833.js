@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 var cors = require('cors')
 /**************************************************************************************************/
 
-
+app.use(cors())
 /*************************** UTILISATION EXPRESS + FORMAT JSON **************************/
 // app sera notre application back qui utilisera expressJs
 const app = express();
@@ -17,11 +17,6 @@ const app = express();
 // app utilisera le bodyparser avec comme format de document reçus/envoyés, du .json
 app.use(bodyParser.json());
 /****************************************************************************************/
-
-
-/************ INITIALISATION DES CORS POUR L'ACCES DU FRONT **************/
-app.use(cors())
-/*************************************************************************/
 
 
 /*************************** CONNECTION A LA BDD **************************/

@@ -8,7 +8,7 @@ export const getItems = () => async dispatch => {
     
     // Requête GET vers notre API + dispatch qui définie le type d'action et ce qu'elle fait (payload) 
     try{
-        const res = await axios.get(`http://localhost:5000/api/item/`)
+        const res = await axios.get(`https://jsonplaceholder.typicode.com/users`)
         dispatch( {
             type: GET_ITEM,
             payload: res.data

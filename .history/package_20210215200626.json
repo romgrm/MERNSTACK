@@ -8,7 +8,6 @@
     "start": "NODE_ENV=production node ./src/server/server.js",
     "server": "NODE_ENV=development nodemon ./src/server/server.js"
   },
-  "proxy": "http://localhost:5000/",
   "author": "Romain Gréaume",
   "license": "UNLICENSED",
   "dependencies": {
